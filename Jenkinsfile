@@ -36,7 +36,6 @@ pipeline {
         stage('Package') {
             steps {
                 echo 'Packaging application...'
-                //sh "mkdir -p ${BUILD_DIR} && echo 'Build Artifacts' > ${BUILD_DIR}/artifact.zip"
             }
         }
 
