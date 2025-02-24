@@ -5,21 +5,21 @@ pipeline {
         stage('Trigger Build Job') {
             steps {
                 echo 'Triggering Build Job...'
-                build job: 'Job1_Build'
+                build job: 'BUILD'
             }
         }
 
         stage('Trigger Test Job') {
             steps {
                 echo 'Triggering Test Job...'
-                build job: 'Job2_Test'
+                build job: 'TEST'
             }
         }
 
         stage('Trigger Deploy Job') {
             steps {
                 echo 'Triggering Deploy Job...'
-                build job: 'Job3_Deploy'
+                build job: 'DEPLOY'
             }
         }
     }
